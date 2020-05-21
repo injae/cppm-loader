@@ -12,7 +12,7 @@ endif()
 set(CPPM_CMAKE_INSTALL_PATH "${CPPM_ROOT}/cmake")
 list(APPEND CMAKE_MODULE_PATH "${CPPM_CMAKE_INSTALL_PATH}")
 
-include(cppm-loader/downloader)
+include(cppm-loader/download)
 cppm_loader_downloader(cppm-loader
     GIT  https://github.com/injae/cppm-loader.git
     PATH ${CPPM_CMAKE_INSTALL_PATH}/cppm-loader
