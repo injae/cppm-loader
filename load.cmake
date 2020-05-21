@@ -8,13 +8,14 @@ if("${CPPM_VERSION}" VERSION_EQUAL "0.0.12")
 else()
     set(CPPM_TOOLS_VERSION "0.0.11")
 endif()
+
 set(CPPM_CMAKE_INSTALL_PATH "${CPPM_ROOT}/cmake")
-list(APPEND CMAKE_MODULE_PATH "${CPPM_CMAKE_INSTALL_PATH}")
+set(CMAKE_MODULE_PATH "${CPPM_CMAKE_INSTALL_PATH}")
 
 include(cppm-loader/downloader)
 cppm_loader_downloader(cppm-loader
     GIT  https://github.com/injae/cppm-loader.git
-    PATH ${CPPM_ROOT}/cmake/cppm-loader
+    PATH ${CPPM_CMAKE_INSTALL_PATH}/cppm-loader
 )
 cppm_loader_downloader(cppm-tools
     GIT     https://github.com/injae/cppm_tools.git
