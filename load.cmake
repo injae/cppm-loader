@@ -1,4 +1,5 @@
 # Cppm version and tool version match and downloader
+set(CPPM_CACHE ${CPPM_ROOT}/cache)
 #set(CPPM_ROOT          ${CPPM_VERSION})
 #set(CPPM_VERSION       ${CPPM_VERSION})
 #set(CPPM_TOOLS_VERSION ${CPPM_TOOLS_VERSION})
