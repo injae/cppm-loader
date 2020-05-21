@@ -9,7 +9,7 @@ else()
     set(CPPM_TOOLS_VERSION "0.0.11")
 endif()
 set(CPPM_CMAKE_INSTALL_PATH "${CPPM_ROOT}/cmake")
-list(APPEND CMAKE_MODULE_PATH ${CPPM_CMAKE_INSTALL_PATH})
+list(APPEND CMAKE_MODULE_PATH "${CPPM_CMAKE_INSTALL_PATH}")
 
 include(cppm-loader/downloader)
 cppm_loader_downloader(cppm-loader
