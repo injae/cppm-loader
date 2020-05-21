@@ -16,6 +16,7 @@ list(APPEND CMAKE_MODULE_PATH "${CPPM_CMAKE_INSTALL_PATH}")
 include(cppm-loader/download)
 
 set(CPPM_CORE "${CPPM_CMAKE_INSTALL_PATH}/cppm-tools-${CPPM_TOOLS_VERSION}")
+set(CPPM_TOOL "cppm-tools-${CPPM_TOOLS_VERSION}")
 cppm_loader_downloader(cppm-tools
     GIT     https://github.com/injae/cppm_tools.git
     GIT_TAG ${CPPM_TOOLS_VERSION}
@@ -27,7 +28,7 @@ cppm_loader_downloader(cppm-loader
     PATH "${CPPM_CMAKE_INSTALL_PATH}/cppm-loader"
 )
 
-include(${CPPM_CORE}/core_load)
+include(${CPPM_TOOL}/core_load)
 
 cppm_set(CPPM_LOADER_CACHE  ${CPPM_ROOT}/cache/cppm-loader/git)
 cppm_set(CPPM_LOADER_PATH   ${CPPM_ROOT}/cmake/cppm-loader/git)
