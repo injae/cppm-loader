@@ -26,8 +26,10 @@ cppm_loader_downloader(cppm-loader
     PATH "${CPPM_CMAKE_INSTALL_PATH}/cppm-loader"
 )
 
-include(cppm-tools-${CPPM_TOOLS_VERSION}/core_load)
+set(CPPM_CORE "cppm-tools-${CPPM_TOOLS_VERSION}")
+include(${CPPM_CORE}/core_load)
 
 cppm_set(CPPM_LOADER_CACHE  ${CPPM_ROOT}/cache/cppm-loader/git)
 cppm_set(CPPM_LOADER_PATH   ${CPPM_ROOT}/cmake/cppm-loader/git)
+cppm_set(CPPM_TOOLS_VERSION ${CPPM_TOOLS_VERSION})
 cppm_set(IS_CPPM_LOADER_LOADED TRUE)
