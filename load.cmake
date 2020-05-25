@@ -3,10 +3,10 @@ set(CPPM_CACHE ${CPPM_ROOT}/cache)
 
 if("${CPPM_VERSION}" VERSION_EQUAL "0.0.13")
     set(CPPM_TOOLS_VERSION "dev")
-elseif("${CPPM_VERSION}" VERSION_EQUAL "0.0.12")
-    set(CPPM_TOOLS_VERSION "0.0.12")
-else()
+elseif("${CPPM_VERSION}" VERSION_EQUAL "0.0.11")
     set(CPPM_TOOLS_VERSION "0.0.11")
+else()
+    set(CPPM_TOOLS_VERSION "0.0.12")
 endif()
 
 set(CPPM_CMAKE_INSTALL_PATH "${CPPM_ROOT}/cmake")
