@@ -1,7 +1,7 @@
 # Cppm version and tool version match and downloader
 set(CPPM_CACHE ${CPPM_ROOT}/cache)
 
-if("${CPPM_VERSION}" VERSION_EQUAL "0.0.13")
+if("${CPPM_VERSION}" VERSION_EQUAL "dev")
     set(CPPM_TOOLS_VERSION "dev")
 elseif("${CPPM_VERSION}" VERSION_EQUAL "0.0.11")
     set(CPPM_TOOLS_VERSION "0.0.11")
