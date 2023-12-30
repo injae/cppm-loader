@@ -26,7 +26,7 @@ function(cppm_loader_downloader)
 
     set(_install_script "${CPPM_CACHE}/${name}/${VERSION}/install-script")
     file(WRITE "${_install_script}/CMakeLists.txt"
-        "cmake_minimum_required(VERSION 3.2)\n"
+        "cmake_minimum_required(VERSION 3.12)\n"
         "project(CPPM_TOOLS_DOWNLOAD NONE)\n"
         "include(ExternalProject)\n"
         "ExternalProject_Add(\n"
